@@ -37,16 +37,49 @@
                         <li class="nav-item">
                             <a class="nav-link" href="#courses">Courses</a>
                         </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#contact">Contact</a>
-                        </li>
-                        <li class="nav-item">
-                            <button type="button" class="btn btn-light" data-bs-toggle="modal" data-bs-target="#loginModal">Sign In</button>
-                        </li>
                     </ul>
                 </div>
             </div>
         </nav>
+
+        <!-- Home page photo gallery-->
+        <div id="home" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-indicators">
+              <button type="button" data-bs-target="#home" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+              <button type="button" data-bs-target="#home" data-bs-slide-to="1" aria-label="Slide 2"></button>
+              <button type="button" data-bs-target="#home" data-bs-slide-to="2" aria-label="Slide 3"></button>
+            </div>
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img src="https://thumbs.dreamstime.com/b/developing-concentrated-programmer-reading-computer-codes-development-website-design-coding-technologies-developing-153437304.jpg" class="d-block w-100" alt="Corgi puppy lounging in sunlight" style="max-height: 500px; object-fit: cover;">
+                <div class="carousel-caption d-none d-md-block caption-bg">
+                  <h5>Welcome to Learn Programming</h5>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <img src="https://media.gettyimages.com/id/1451456915/photo/female-freelance-developer-coding-and-programming-coding-on-two-with-screens-with-code.jpg?s=612x612&w=gi&k=20&c=DxUOtEcP_uDY_QINyLlGFQdB5KLKO7EgSDbIMQqOkq4=" class="d-block w-100" alt="Corgi puppy playing" style="max-height: 500px; object-fit: cover;">
+                <div class="carousel-caption d-none d-md-block caption-bg">
+                  <h5>Learn Something New!</h5>
+                  <p>Visit our course resources for helpful links</p>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <img src="https://media.istockphoto.com/id/1356364268/photo/close-up-focus-on-persons-hands-typing-on-the-desktop-computer-keyboard-screens-show-coding.jpg?s=612x612&w=0&k=20&c=4R_9mWq9KzgpC_pVBMMM0FNzw1L-NyFLa7tDqFInMGs=" class="d-block w-100" alt="Corgi puppy in a basket" style="max-height: 500px; object-fit: cover;">
+                <div class="carousel-caption d-none d-md-block caption-bg">
+                  <h5>Improve And Test Your Skills By Building Projects!</h5>
+                  
+                </div>
+              </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#home" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#home" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
 
         <!-- About -->
         <div id="about" class="py-5 bg-light rounded-3 mt-5">
@@ -57,20 +90,16 @@
                 To learn something new each day is a great lifelong goal to have, and we're here to help you!
                 </p>
                 <p class="text-center fs-4">
-                Listed below is a catalog of resource links, videos, and example projects that help you both learn and practice your skills in computer programming. 
+                Listed below is a catalog of resource links, videos, and example projects that help you both learn and practice your skills in computer programming. If you are a beginner we recommend checking out the beginner section first and following the roadmaps provided.
+                </p>
+                <p class="text-center fs-4">
+                    If you are already experienced in computer programming but looking to learn a new language or skill, we have great sources for that as well!
                 </p>
             </div>
         </div>
 
-        <!-- Home page video-->
-        <section id="home" class="container-fluid -0">
-            <div class="ratio ratio-16x9">
-                <iframe width="50" height="30" src="https://www.youtube.com/embed/k9WqpQp8VSU?si=j6qpND4CRLU1FOsA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-            </div>
-        </section>
-
         <!-- Resources -->
-        <section class="container mt-5">
+        <section class="container mt-5" id="courses">
             <h2 class="text-center">Course Resources</h2>
             <div class="accordion" id="accordion">
                 <div class="accordion-item">
@@ -176,12 +205,12 @@
                     </h2>
                     <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour" data-bs-parent="#accordion">
                         <div class="accordion-body">
-                            Bootstrap - <a href="https://www.geeksforgeeks.org/bootstrap-5-introduction/?ref=shm" target="_blank" rel="noopener noreferrer">
+                            Learn Bootstrap - <a href="https://www.geeksforgeeks.org/bootstrap-5-introduction/?ref=shm" target="_blank" rel="noopener noreferrer">
                                 Click Me!
                             </a>
                         </div>
                         <div class="accordion-body">
-                            TailwindCSS - <a href="https://www.geeksforgeeks.org/tailwind-css/?ref=shm" target="_blank" rel="noopener noreferrer">
+                            Learn TailwindCSS - <a href="https://www.geeksforgeeks.org/tailwind-css/?ref=shm" target="_blank" rel="noopener noreferrer">
                                 Click Me!
                             </a>
                         </div>
@@ -205,16 +234,29 @@
                     </h2>
                     <div id="collapseFive" class="accordion-collapse collapse" aria-labelledby="headingFive" data-bs-parent="#accordion">
                         <div class="accordion-body">
-                            ReactJS
+                            Learn ReactJS <a href="https://www.geeksforgeeks.org/react/" target="_blank" rel="noopener noreferrer">
+                                here
+                            </a>
                         </div>
                         <div class="accordion-body">
-                            Next.js
+                            Learn Next.js <a href="https://nextjs.org/learn" target="_blank" rel="noopener noreferrer">
+                                here
+                            </a>
                         </div>
                         <div class="accordion-body">
-                            Angular
+                            Learn Angular.js <a href="https://www.geeksforgeeks.org/angularjs/" target="_blank" rel="noopener noreferrer">
+                                here
+                            </a>
                         </div>
                         <div class="accordion-body">
-                            Vue
+                            Learn Vue.js <a href="https://www.geeksforgeeks.org/vue-js/" target="_blank" rel="noopener noreferrer">
+                                here
+                            </a>
+                        </div>
+                        <div class="accordion-body">
+                            Practice React <a href="https://www.freecodecamp.org/learn/front-end-development-libraries/#react" target="_blank" rel="noopener noreferrer">
+                                here
+                            </a>
                         </div>
                     </div>
                 </div>
@@ -226,13 +268,40 @@
                     </h2>
                     <div id="collapseSix" class="accordion-collapse collapse" aria-labelledby="headingSix" data-bs-parent="#accordion">
                         <div class="accordion-body">
-                            MySQL
+                            Learn SQL <a href="https://www.geeksforgeeks.org/sql-tutorial/?ref=outind" target="_blank" rel="noopener noreferrer">
+                                here
+                            </a>
                         </div>
                         <div class="accordion-body">
-                            PostgreSQL
+                            Learn MySQL <a href="https://www.geeksforgeeks.org/mysql-tutorial/?ref=shm" target="_blank" rel="noopener noreferrer">
+                                here
+                            </a> and watch <a href="https://www.youtube.com/watch?v=5OdVJbNCSso" target="_blank" rel="noopener noreferrer">
+                                here
+                            </a>
                         </div>
                         <div class="accordion-body">
-                            MongoDB
+                            Learn PostgreSQL <a href="https://www.geeksforgeeks.org/postgresql-tutorial/?ref=shm" target="_blank" rel="noopener noreferrer">
+                                here
+                            </a> and watch <a href="https://www.youtube.com/watch?v=SpfIwlAYaKk&pp=ygUKcG9zdGdyZXNxbA%3D%3D" target="_blank" rel="noopener noreferrer">
+                                here
+                            </a>
+                        </div>
+                        <div class="accordion-body">
+                            Learn MongoDB <a href="https://www.geeksforgeeks.org/mongodb-tutorial/?ref=shm" target="_blank" rel="noopener noreferrer">
+                                here
+                            </a> and watch <a href="https://www.youtube.com/watch?v=c2M-rlkkT5o&pp=ygUHbW9uZ29kYg%3D%3D" target="_blank" rel="noopener noreferrer">
+                                here
+                            </a>
+                        </div>
+                        <div class="accordion-body">
+                            Practice relational databases <a href="https://www.freecodecamp.org/learn/relational-database/" target="_blank" rel="noopener noreferrer">
+                                here
+                            </a>
+                        </div>
+                        <div class="accordion-body">
+                            Practice your MongoDB skills <a href="https://www.freecodecamp.org/learn/back-end-development-and-apis/#mongodb-and-mongoose" target="_blank" rel="noopener noreferrer">
+                                here
+                            </a>
                         </div>
                     </div>
                 </div>
@@ -244,18 +313,58 @@
                     </h2>
                     <div id="collapseSeven" class="accordion-collapse collapse" aria-labelledby="headingSeven" data-bs-parent="#accordion">
                         <div class="accordion-body">
-                            NodeJS
+                            Learn Node.js <a href="https://www.geeksforgeeks.org/nodejs/" target="_blank" rel="noopener noreferrer">
+                                here
+                            </a>
                         </div>
                         <div class="accordion-body">
-                            Django
+                            Learn Django <a href="https://www.geeksforgeeks.org/django-tutorial/" target="_blank" rel="noopener noreferrer">
+                                here
+                            </a>
+                        </div>
+                        <div class="accordion-body">
+                            Learn Spring Boot <a href="https://www.geeksforgeeks.org/spring-boot/" target="_blank" rel="noopener noreferrer">
+                                here
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="headingEight">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseEight" aria-expanded="false" aria-controls="collapseEight">
+                            Practice Projects
+                        </button>
+                    </h2>
+                    <div id="collapseEight" class="accordion-collapse collapse" aria-labelledby="headingEight" data-bs-parent="#accordion">
+                        <div class="accordion-body">
+                            FreeCodeCamp frontend practice <a href="https://www.freecodecamp.org/learn/front-end-development-libraries/#front-end-development-libraries-projects" target="_blank" rel="noopener noreferrer">
+                                here
+                            </a>
+                        </div>
+                        <div class="accordion-body">
+                            FreeCodeCamp backend practice <a href="https://www.freecodecamp.org/learn/back-end-development-and-apis/#back-end-development-and-apis-projects" target="_blank" rel="noopener noreferrer">
+                                here
+                            </a>
+                        </div>
+                        <div class="accordion-body">
+                            Project ideas <a href="https://github.com/ZOUHAIRFGRA/100-Project-Ideas-for-Full-Stack-Developers" target="_blank" rel="noopener noreferrer">
+                                found here!
+                            </a>
+                        </div>
+                        <div class="accordion-body">
+                            Scrimba React course and projects <a href="https://scrimba.com/learn-react-c0e" target="_blank" rel="noopener noreferrer">
+                                here
+                            </a>
                         </div>
                     </div>
                 </div>
             </div>
-            
         </section>
 
-        <!-- Contact form page-->
+        <footer class="bg-primary text-light text-center py-3 mt-4">
+            <p>&copy; 2024 Learn Programming. All rights reserved to the respective sources, websites, and Youtube video creators.</p>
+        </footer>
+        
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
     </body>
 </html>
